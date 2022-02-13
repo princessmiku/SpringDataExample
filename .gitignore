@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+/.idea/
+/data.h2.mv.db
+/data.h2.trace.db
