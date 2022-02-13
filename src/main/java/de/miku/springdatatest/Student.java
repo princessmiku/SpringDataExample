@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "student", uniqueConstraints = {
         @UniqueConstraint(name = "student_email_unique", columnNames = "email")
 })
-@Entity(name = "Student") // name of table
+@Entity(name = "Student")
 public class Student {
 
     @Id
@@ -34,8 +34,7 @@ public class Student {
 
     }
 
-    public Student(Long id, String firstName, String lastName, String email, int age) {
-        this.id = id;
+    public Student(String firstName, String lastName, String email, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
